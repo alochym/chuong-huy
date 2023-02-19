@@ -5,7 +5,7 @@
 1. Initialize git - git init
 1. Create a git ignore file(help to ignore file which to be added to git repo) - touch .gitignore
 
-## Git conffig
+## Git config
 
 1.  Config Fullname - git config --global user.name "Do Nguyen Ha"
 1.  Config Email - git config --global user.email "donguyenha@live.com"
@@ -40,6 +40,18 @@
 1. To make human read the git log - git log --pretty=oneline --abbrev-commit.
 1. To navigate to specific commit of the git log - git log < commit-hash >.
 1. To view commit history of file in the git log - git log < file-name >. 
+1. How it works:
+   - The current Git tree
+
+     ```bash
+            ------(B)------(C - your current branch)
+           /
+     ----(A)
+           \
+            ------(D)------(E)------(F)
+     ```
+
+   - **The git log start in (C) -> (B) -> (A - has no parent) -> Done**.
 
 ### Git diff
 
@@ -64,4 +76,6 @@
      +   1. The branch you wish to merge or "mix" in (we'll call this the "proposee").
    ```
 
-1. To compare the last commit to Git's index - git diff --cached.
+1. To compare the last `git add` to Git's index but **not do git commit yet** - git diff --cached.
+1. To compare between 2 difference commits - git diff target-commit-ID source-commit-ID.
+1. To compare between 2 difference branches - git diff target-branch source-branch.
