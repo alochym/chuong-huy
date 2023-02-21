@@ -7,8 +7,11 @@
 
 ## Git config
 
-1.  Config Fullname - git config --global user.name "Do Nguyen Ha"
-1.  Config Email - git config --global user.email "donguyenha@live.com"
+1. Config Global Fullname - git config --global user.name "Do Nguyen Ha"
+1. Config Global Email - git config --global user.email "donguyenha@live.com"
+1. Config Local Fullname - git config --local user.name "Do Nguyen Ha"
+1. Config Local Email - git config --local user.email "donguyenha@live.com"
+1. Show git config - git config --list
 
 ### Git branch
 
@@ -20,6 +23,7 @@
    1. git switch alochym.
 1. List all branches - git branch.
 1. Delete branch - git branch -d alochym.
+1. Rename branch - git branch -m dest-name source-name.
 
 ### Git merge
 
@@ -79,3 +83,14 @@
 1. To compare the last `git add` to Git's index but **not do git commit yet** - git diff --cached.
 1. To compare between 2 difference commits - git diff target-commit-ID source-commit-ID.
 1. To compare between 2 difference branches - git diff target-branch source-branch.
+
+### Git restore
+
+1. To discard any changes in current directory:
+   - git restore file-name-a file-name-b
+   - git restore  --staged
+
+### Git tag
+
+1. Make a git tag - git tag v0.1
+1. Make a git tag with commit ID - git tag v0.1 commit-ID
