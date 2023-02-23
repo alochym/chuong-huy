@@ -2,6 +2,7 @@
 
 1. Download java for window msi package - <https://www.oracle.com/java/technologies/downloads/#jdk19-windows>
 1. Install the downloaded java file.
+1. Install for Centos 7 - <https://tecadmin.net/install-latest-java-on-centos/>
 
 ## Check Java Installation
 
